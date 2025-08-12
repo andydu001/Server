@@ -1,0 +1,26 @@
+plugins {
+    id 'java'
+}
+
+group 'org.example'
+version '1.0-SNAPSHOT'
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    testImplementation 'org.junit.jupiter:junit-jupiter-api:5.8.1'
+    testRuntimeOnly 'org.junit.jupiter:junit-jupiter-engine:5.8.1'
+    implementation 'com.vladsch.flexmark:flexmark:0.64.8'
+    implementation 'org.springframework.boot:spring-boot:3.5.3'
+    //implementation 'org.apache.tomcat:tomcat-catalina:11.0.9'
+    implementation 'org.apache.tomcat.embed:tomcat-embed-core:11.0.8'
+    implementation 'org.apache.tomcat:tomcat-jasper:11.0.0-M18'
+
+
+}
+
+test {
+    useJUnitPlatform()
+}

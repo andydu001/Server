@@ -1,0 +1,18 @@
+<!DOCTYPE web-app [
+        <!ELEMENT web-app (servlet|servlet-mapping)*>
+        <!ELEMENT servlet (servlet-name|servlet-class)*>
+        <!ELEMENT servlet-name (#PCDATA)>
+        <!ELEMENT servlet-class (#PCDATA)>
+        <!ELEMENT servlet-mapping (servlet-name|url-pattern)*>
+        <!ELEMENT url-pattern (#PCDATA)>
+        ]>
+<web-app>
+    <servlet>
+        <servlet-name>DoSomethingServlet</servlet-name>
+        <servlet-class>org.example.DoSomethingServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>DoSomethingServlet</servlet-name>
+        <url-pattern>/bonjour</url-pattern>
+    </servlet-mapping>
+</web-app>
